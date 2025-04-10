@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f3eb;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  color: #ddd;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #5a4e3c; /* Darkened the navbar */
+  padding: 12px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #f8f3eb !important;
+  font-weight: 600;
+}
+.navbar .nav-link:hover {
+  color: #ffd166 !important;
+}
+
+/* Home Section Styling */
+#home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Darker Background overlay with gradient and image */
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(135deg, rgba(219, 130, 14, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+    url('leaves.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  z-index: 0;
+}
+
+/* Content positioning in Home section */
+#home .content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);  /* Darker semi-transparent container */
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Top Download Text */
+.top-text {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #ffd166;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Version Text */
+.version-text {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: #ffe7a0;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Styles */
+.btn-custom {
+  background-color: #c27c3a;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 10px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-custom:hover {
+  background-color: #a65a25;
+  transform: scale(1.05);
+}
+
+.btn-donate {
+  background-color: #ffd166;
+  color: #5a4e3c;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-donate:hover {
+  background-color: #fcbf49;
+  transform: scale(1.05);
+}
+
+/* About Section Styling */
+#about {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #333;  /* Darker background for About section */
+  color: #f8f3eb;
+}
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #ffd166;
+}
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .top-text {
+    font-size: 2.2rem;
+  }
+  .btn-custom, .btn-donate {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
