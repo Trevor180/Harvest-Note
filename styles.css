@@ -116,29 +116,45 @@ body {
 #about {
   padding: 80px 20px;
   text-align: center;
-  background-color: #333;  /* Darker background for About section */
+  background-color: #333;  /* Darker background for contrast */
   color: #f8f3eb;
+  border-radius: 0px;
 }
+
 #about h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
   font-weight: 600;
   color: #ffd166;
 }
+
 #about p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  color: #ddd;
   line-height: 1.8;
-  max-width: 700px;
-  margin: 0 auto;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .top-text {
-    font-size: 2.2rem;
-  }
-  .btn-custom, .btn-donate {
-    width: 100%;
-    margin: 10px 0;
-  }
+/* Demo Section Styling */
+#demo {
+  background-color: #5a4e3c;
+  padding: 60px 20px;
+  color: #f8f3eb;
+}
+
+#demo h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#demo p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Video Embed */
+.embed-responsive {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
 }
